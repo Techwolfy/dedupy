@@ -18,3 +18,7 @@ optional arguments:
   -d, --delete   delete duplicate files in target directory
   -f, --force    delete files without asking for confirmation
 ```
+
+License
+-------
+Dedupy is published under the MIT license. For details, see [LICENSE](LICENSE).
