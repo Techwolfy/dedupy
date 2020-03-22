@@ -49,6 +49,10 @@ def main(source, target, recurse, delete, force):
 			del src[fhash]
 			del tgt[fhash]
 
+	if len(both) == 0:
+		print('No duplicate files found.')
+		return
+
 	print('\nDuplicate files ({}):'.format(len(both)))
 	for fhash, fnames in both.items():
 		print('{}\t{}\t{}'.format(fhash, fnames[0], fnames[1]))
